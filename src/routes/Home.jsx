@@ -6,12 +6,13 @@ const Home = () => {
             {/* header aqui */}
 
             <main>
-                <h1>Home sla</h1>
+                <h1>Home oiii</h1>
             </main>
 
             {/* footer aqui */}
         </div>
+        
     )
-}
+} 
 
 export default Home;
