@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home.jsx'
 import Erro from './routes/Erro.jsx'
 import Sobre_nos from './routes/Sobre_nos.jsx'
-import Case from './routes/Case.jsx'
+import Servicos from './routes/Servicos.jsx'
 import Contato from './routes/Contato.jsx'
+import Geral from './styles/Geral.jsx'
 
 const routes = createBrowserRouter([
   {
@@ -26,8 +27,8 @@ const routes = createBrowserRouter([
         element: <Sobre_nos />
       },
       {
-        path: "/case",
-        element: <Case />
+        path: "/servicos",
+        element: <Servicos />
       },
       {
         path: "/contato",
@@ -41,6 +42,7 @@ const routes = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Geral />
     <RouterProvider router={routes} />
   </StrictMode>,
 )

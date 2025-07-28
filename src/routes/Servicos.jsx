@@ -1,4 +1,4 @@
-const Case = () => {
+const Servicos = () => {
     return (
         <div>
             {/* arquivo de estilo aqui */}
@@ -6,7 +6,7 @@ const Case = () => {
             {/* header aqui */}
 
             <main>
-                <h1>Página case</h1>
+                <h1>Página servicos</h1>
             </main>
 
             {/* footer aqui */}
@@ -14,4 +14,4 @@ const Case = () => {
     )
 }
 
-export default Case;
+export default Servicos;
