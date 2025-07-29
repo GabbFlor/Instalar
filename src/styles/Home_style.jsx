@@ -1,76 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-import Banner from "../assets/Home/Banner1.webp"
 
 const Home_style = createGlobalStyle `
-    :root {
-        /* banner */
-        --font-size-h1-banner: 2.25vw;
-        --font-size-p-banner: 1.3vw;
-
-        /* sessoes de texto */
-        --font-size-h1: 2vw;
-        --font-size-p: 1.05vw;
-
-        /* cards do grid */
-        --width-card: 12.5vw;
-        --height-card: 18vw;
-
-        /* imagens do grid */
-        --width-img: 20vw;
-        --height-img: 20vw;
-
-        /* video */
-        --width-video: 20vw;
-
-        --font-button: 1vw;
-    }
-
     main {
         font-family: "Manrope", sans-serif;
         background-color: white;
-    }
-
-    .banner-section {
-        background-image: url(${Banner});
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 400px;
-
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        gap: 25px;
-    }
-
-
-    .banner-section::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        height: 400px;
-    }
-
-    .banner-section > * {
-    position: relative;
-    z-index: 2;
-    }
-
-    .banner-section h1 {
-        font-size: var(--font-size-h1-banner);
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .banner-section p {
-        font-size: var(--font-size-p-banner);
-        text-align: center;
     }
 
     .banner-section button, .galeria-servicos-section a, .cases-section a {
@@ -241,58 +174,12 @@ const Home_style = createGlobalStyle `
     }
 
     @media (min-width: 500px) and (max-width: 800px) {
-        :root {
-            /* banner */
-            --font-size-h1-banner: 4.5vw;
-            --font-size-p-banner: 2.6vw;
-
-            /* sessoes de texto */
-            --font-size-h1: 2.75vw;
-            --font-size-p: 1.75vw;
-
-            /* cards do grid */
-            --width-card: 22vw;
-            --height-card: 30.5vw;
-
-            /* imagens do grid */
-            --width-img: 25.75vw;
-            --height-img: 25.75vw;
-
-            /* video */
-            --width-video: 25.75vw;
-
-            --font-button: 2vw;
-        }
-
         .grid-oferecimento {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
     @media (max-width: 499px) {
-        :root {
-            /* banner */
-            --font-size-h1-banner: 5.5vw;
-            --font-size-p-banner: 3.25vw;
-
-            /* sessoes de texto */
-            --font-size-h1: 4vw;
-            --font-size-p: 3vw;
-
-            /* cards do grid */
-            --width-card: 44vw;
-            --height-card: 52.5vw;
-
-            /* imagens do grid */
-            --width-img: 29vw;
-            --height-img: 29vw;
-
-            /* video */
-            --width-video: 40vw;
-
-            --font-button: 3vw;
-        }
-
         .banner-section {
             height: 200px;
         }

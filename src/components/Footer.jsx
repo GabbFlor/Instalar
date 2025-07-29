@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div className="redes">
-                    <p>NOSSAS REDES SOCIAIS: <a href="#"><BsWhatsapp /></a> <a href="#"><BsInstagram /></a></p>
+                    <p>NOSSAS REDES SOCIAIS: <a href="#" target="blank_"><BsWhatsapp /></a> <a href="https://www.instagram.com/instalar.oficial/" target="blank_"><BsInstagram /></a></p>
                 </div>
             </footer>
             <div className="copyright">

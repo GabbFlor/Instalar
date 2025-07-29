@@ -1,11 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
 const Header_style = createGlobalStyle `
-    :root {
-        --height-logo: 70px;
-        --font-size-header-a: 1vw;
-    }
-
     header {
         display: inline-flex;
         width: 100%;
@@ -57,10 +52,6 @@ const Header_style = createGlobalStyle `
     }
 
     @media (min-width: 500px) and (max-width: 800px) {
-        :root {
-            --height-logo: 70px !important;
-            --font-size-header-a: 1.8vw !important;
-        }
 
         header nav ul li a {
             padding: 5px 12.5px 5px 12.5px;
@@ -68,10 +59,6 @@ const Header_style = createGlobalStyle `
     }
 
     @media (max-width: 500px) {
-        :root {
-            --height-logo: 40px;
-            --font-size-header-a: 2.5vw;
-        }
 
         header nav ul li a {
             padding: 5px 5px 5px 5px;

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
+import BannerImage from "../assets/Home/Banner1.webp"
 import Img1 from "../assets/Home/grid1.webp";
 import Img2 from "../assets/Home/grid2.webp";
 import Img3 from "../assets/Home/grid3.webp";
@@ -11,6 +12,7 @@ import Video from "../assets/Home/video.mp4";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Home_style from "../styles/Home_style";
+import Banner from "../components/Banner";
 
 const Home = () => {
     return (
@@ -20,14 +22,14 @@ const Home = () => {
             <Header />
 
             <main>
-                <section className="banner-section">
+                <Banner img={BannerImage}>
                     <div>
                         <h1>SOLUÇÕES EM OBRAS</h1>
                         <p>Soluções elétricas e infraestrutura com segurança e qualidade</p>
                     </div>
 
                     <button>SAIBA MAIS</button>
-                </section>
+                </Banner>
 
                 <section className="sobre-nos-section">
                     <h1>SOBRE NÓS</h1>
