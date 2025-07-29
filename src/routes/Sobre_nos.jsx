@@ -5,13 +5,13 @@ import Img1 from "../assets/Sobre_nos/img1.webp";
 import Img2 from "../assets/Sobre_nos/img2.webp";
 import BannerImage from "../assets/Sobre_nos/Banner.webp"
 
-import "../styles/Sobre_nos_style.css";
 import Banner from "../components/Banner";
+import Sobre_nos_style from "../styles/Sobre_nos_style";
 
 const Sobre_nos = () => {
     return (
         <div>
-            {/* arquivo de estilo aqui */}
+            <Sobre_nos_style />
 
             <Header />
 

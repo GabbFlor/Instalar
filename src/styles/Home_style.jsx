@@ -180,14 +180,6 @@ const Home_style = createGlobalStyle `
     }
 
     @media (max-width: 499px) {
-        .banner-section {
-            height: 200px;
-        }
-
-        .banner-section::before {
-            height: 200px;
-        }
-
         .grid-oferecimento {
             grid-template-columns: repeat(1, 1fr);
         }

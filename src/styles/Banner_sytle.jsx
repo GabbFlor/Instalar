@@ -61,6 +61,16 @@ const Banner_style = createGlobalStyle `
         .banner-section button:hover {
             background-color: #b10000;
         }
+
+        @media (max-width: 499px) {
+            .banner-section {
+                height: 200px;
+            }
+
+            .banner-section::before {
+                height: 200px;
+            }
+        }
     `
 
 export default Banner_style;
