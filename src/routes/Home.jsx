@@ -22,7 +22,7 @@ const Home = () => {
             <Header />
 
             <main>
-                <Banner img={BannerImage}>
+                <Banner img={BannerImage}>  
                     <div>
                         <h1>SOLUÇÕES EM OBRAS</h1>
                         <p>Soluções elétricas e infraestrutura com segurança e qualidade</p>

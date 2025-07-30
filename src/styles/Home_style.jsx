@@ -133,6 +133,7 @@ const Home_style = createGlobalStyle `
         width: var(--width-img);
         height: var(--height-img);
         border-radius: 20px;
+        object-fit: cover;
     }
 
     .cases-section {

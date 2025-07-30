@@ -16,7 +16,7 @@ const Sobre_nos = () => {
             <Header />
 
             <main>
-                <Banner img={BannerImage}>
+                <Banner img={BannerImage} img_position={"top"}>
                     <h1>SOBRE NÓS</h1>
                 </Banner>
 

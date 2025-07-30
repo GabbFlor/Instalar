@@ -6,7 +6,7 @@ const Banner_style = createGlobalStyle `
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
-            height: 400px;
+            height: 500px;
     
             position: relative;
             display: flex;
@@ -24,7 +24,7 @@ const Banner_style = createGlobalStyle `
             inset: 0;
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 1;
-            height: 400px;
+            height: 500px;
         }
     
         .banner-section > * {
