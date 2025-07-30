@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const Home_style = createGlobalStyle `
     main {
-        font-family: "Manrope", sans-serif;
         background-color: white;
     }
 
@@ -216,6 +215,11 @@ const Home_style = createGlobalStyle `
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+        }
+
+        .grid-servicos {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
         }
     }
 `

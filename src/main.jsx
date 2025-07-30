@@ -8,6 +8,7 @@ import Sobre_nos from './routes/Sobre_nos.jsx'
 import Servicos from './routes/Servicos.jsx'
 import Contato from './routes/Contato.jsx'
 import Geral from './styles/Geral.jsx'
+import "./styles/Fonts.css";
 
 const routes = createBrowserRouter([
   {

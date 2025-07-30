@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const Geral = createGlobalStyle `
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
-
     :root {
         // Header
         --height-logo: 70px;
@@ -22,7 +20,7 @@ const Geral = createGlobalStyle `
         --font-size-p: 1.05vw;
 
         --width-card: 12.5vw;
-        --height-card: 18vw;
+        --height-card: 18.5vw;
 
         --width-img: 20vw;
         --height-img: 20vw;
@@ -86,8 +84,8 @@ const Geral = createGlobalStyle `
             --width-card: 44vw;
             --height-card: 52.5vw;
 
-            --width-img: 29vw;
-            --height-img: 29vw;
+            --width-img: 40vw;
+            --height-img: 40vw;
 
             --width-video: 40vw;
 
@@ -99,6 +97,11 @@ const Geral = createGlobalStyle `
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+    }
+
+    main {
+        line-height: 1.6;
+        font-family: "Manrope", sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {

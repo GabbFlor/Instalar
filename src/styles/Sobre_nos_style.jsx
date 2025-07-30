@@ -1,10 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const Sobre_nos_style = createGlobalStyle `
-    main {
-        font-family: "Manrope", sans-serif;
-    }
-
     .quem-somos-section,
     .valores-section,
     .proposito-section {
