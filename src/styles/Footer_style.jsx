@@ -46,6 +46,8 @@ const Footer_style = createGlobalStyle `
         font-family: "Manrope", sans-serif;
         text-align: center;
         font-size: var(--font-size-footer-copyright);
+        background-color: white;
+        color: black;
     }
 
     @media (min-width: 500px) and (max-width:800px) {
