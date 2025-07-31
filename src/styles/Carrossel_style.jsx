@@ -62,11 +62,49 @@ const Carrossel_style = createGlobalStyle `
     }
 
     .slick-prev {
-        margin-left: -50px;
+        margin-left: -2vw;
     }
 
     .slick-next {
-        margin-right: -50px;
+        margin-right: -2vw;
+    }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+        .carrossel-container .slick-slide img {
+            width: 35vw;
+            height: 50vw;
+            object-fit: cover;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .custom-dots .ponto-customizado {
+            width: 8px;
+            height: 8px;
+        }
+
+        .slick-arrow svg {
+            font-size: 4.5vw;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .carrossel-container .slick-slide img {
+            width: 45vw;
+            height: 75vw;
+            object-fit: cover;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .custom-dots .ponto-customizado {
+            width: 6.5px;
+            height: 6.5px;
+        }
+
+        .slick-arrow svg {
+            font-size: 6vw;
+        }
     }
 `
 

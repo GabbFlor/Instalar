@@ -48,7 +48,22 @@ const Carroussel = () => {
         prevArrow: <SetaAnterior />,
         customPaging: i => (
             <div className="ponto-customizado"></div>
-        )
+        ),
+
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     }
 
     return (

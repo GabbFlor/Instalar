@@ -65,6 +65,44 @@ const Servicos_style = createGlobalStyle `
         object-fit: cover;
         border-radius: 15px;
     }
+
+    @media (min-width: 500px) and (max-width: 800px) {
+        .servicos-1-section div img {
+            width: 25vw;
+        }
+    }
+
+    @media (max-width: 499px) {
+        .servicos-1-section h1::after, 
+        .servicos-2-section h1::after {
+            width: 35%;
+        }
+
+        .servicos-1-section p,
+        .servicos-2-section p {
+            width: 75vw;
+        }
+
+        .servicos-1-section h1, 
+        .servicos-2-section h1 {
+            margin-bottom: 25px;
+        }
+
+        .servicos-1-section div {
+            gap: 20px;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
+        .servicos-1-section div img {
+            width: 45vw;
+            height: 65vw;
+        }
+
+        .servicos-2-section {
+            padding-top: 0;
+        }
+    }
 `
 
 export default Servicos_style;
