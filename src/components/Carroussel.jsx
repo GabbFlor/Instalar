@@ -10,7 +10,31 @@ import Slide6_img from "../assets/Servicos/Slide6.webp";
 import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
 import Carrossel_style from "../styles/Carrossel_style";
 
-function Carroussel() {
+function SetaProximo(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={`${className}`}
+            onClick={onClick}
+        >
+            <BsCaretRight />
+        </div>
+    );
+}
+
+function SetaAnterior(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={`${className}`}
+            onClick={onClick}
+        >
+            <BsCaretLeft />
+        </div>
+    );
+}
+
+const Carroussel = () => {
     const settings = {
         dots: true,
         dotsClass: "slick-dots custom-dots",
@@ -20,8 +44,8 @@ function Carroussel() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        nextArrow: <BsCaretRight />,
-        prevArrow: <BsCaretLeft />,
+        nextArrow: <SetaProximo />,
+        prevArrow: <SetaAnterior />,
         customPaging: i => (
             <div className="ponto-customizado"></div>
         )

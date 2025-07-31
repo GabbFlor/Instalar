@@ -36,7 +36,6 @@ const Carrossel_style = createGlobalStyle `
     }
 
     .slick-arrow {
-        color: black;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -47,13 +46,19 @@ const Carrossel_style = createGlobalStyle `
         transition: color 0.3s ease;
     }
 
-    .slick-arrow:hover {
-        color: rgb(255, 123, 0);
-    }
-
     .slick-prev::before,
     .slick-next::before {
-        display: none;
+        display: none !important;
+    }
+
+    .slick-arrow svg {
+        color: black;
+        font-size: 3vw;
+        transition: color 0.3s ease;
+    }
+
+    .slick-arrow svg:hover {
+        color: rgb(255, 123, 0);
     }
 
     .slick-prev {
