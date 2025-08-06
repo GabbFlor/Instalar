@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const Servicos_style = createGlobalStyle `
+    main {
+        background-color: var(--color-background);
+        color: var(--color-font);
+    }
+
     .servicos-1-section, 
     .servicos-2-section {
         padding: 50px 0;

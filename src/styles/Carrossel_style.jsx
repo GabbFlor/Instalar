@@ -52,7 +52,7 @@ const Carrossel_style = createGlobalStyle `
     }
 
     .slick-arrow svg {
-        color: black;
+        color: var(--color-font);
         font-size: 3vw;
         transition: color 0.3s ease;
     }

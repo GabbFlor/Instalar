@@ -28,6 +28,9 @@ const Geral = createGlobalStyle `
         --width-video: 20vw;
 
         --font-button: 1vw;
+
+        --color-background: #1E1E1EEB;
+        --color-font: #FFFFFF;
     }
 
     // fontes em responsividade:

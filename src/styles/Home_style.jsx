@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const Home_style = createGlobalStyle `
     main {
-        background-color: white;
+        background-color: var(--color-background);
+        color: var(--color-font)
     }
 
     .banner-section button, .galeria-servicos-section a, .cases-section a {

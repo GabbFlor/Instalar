@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const Sobre_nos_style = createGlobalStyle `
+    main {
+        background-color: var(--color-background);
+        color: var(--color-font);
+    }
+
     .quem-somos-section,
     .valores-section,
     .proposito-section {
@@ -18,6 +23,7 @@ const Sobre_nos_style = createGlobalStyle `
 
     .quem-somos-section p,
     .valores-section li,
+    .valores-section p,
     .proposito-section p {
         font-size: var(--font-size-p);
         width: 45vw;
@@ -36,13 +42,19 @@ const Sobre_nos_style = createGlobalStyle `
     }
 
     .quem-somos-section div,
-    .valores-section div,
+    .valores-section div:not(.escrita-responsiva-valores),
     .proposito-section div{
         display: inline-flex;
         padding: 30px 100px 0 100px;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .escrita-responsiva-valores {
+        display: flex;
+        flex-direction: column;
+        width: fit-content !important;
     }
 
     .quem-somos-section div img {

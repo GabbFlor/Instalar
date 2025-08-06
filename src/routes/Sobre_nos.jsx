@@ -7,8 +7,11 @@ import BannerImage from "../assets/Sobre_nos/Banner.webp"
 
 import Banner from "../components/Banner";
 import Sobre_nos_style from "../styles/Sobre_nos_style";
+import { useMediaQuery } from "react-responsive";
 
 const Sobre_nos = () => {
+    const isBigScreen = useMediaQuery({ minWidth: 800 });
+
     return (
         <div>
             <Sobre_nos_style />
@@ -48,14 +51,38 @@ const Sobre_nos = () => {
                     <h1>VALORES</h1>
 
                     <div>
-                        <ul>
-                            <li>Segurança: Prioridade máxima em todas as etapas dos serviços.</li>
-                            <li>Qualidade: Entrega de alto padrão, com foco nos detalhes e no resultado final.</li>
-                            <li>Eficiência: Soluções ágeis, organizadas e assertivas.</li>
-                            <li>Comprometimento: Cumprimos prazos, normas e expectativas.</li>
-                            <li>Transparência: Relacionamentos baseados na confiança e no respeito.</li>
-                            <li>Inovação: Atualização constante para oferecer o que há de melhor no setor.</li>
-                        </ul>
+                        {isBigScreen
+                                ? 
+                                (
+                                    <div className="escrita-responsiva-valores">
+                                        <p>
+                                            Na InstaLar, cada projeto é conduzido com base em 
+                                            princípios sólidos que norteiam nossa atuação e refletem 
+                                            nosso compromisso com os clientes, parceiros e com a sociedade.
+                                        </p>
+                                        <br />
+                                        <ul>
+                                            <li>Segurança é nossa prioridade máxima. Garantimos que cada etapa do serviço seja executada com total responsabilidade, seguindo rigorosamente as normas técnicas e cuidando da integridade de todos os envolvidos.</li>
+                                            <li>Qualidade é o que nos move. Buscamos a excelência em cada detalhe, entregando resultados de alto padrão e duradouros.</li>
+                                            <li>Eficiência está presente em tudo o que fazemos. Trabalhamos de forma ágil, organizada e estratégica, sempre em busca da melhor solução.</li>
+                                            <li>Comprometimento é um valor que carregamos com orgulho. Cumprimos prazos, respeitamos as normas e nos dedicamos a superar as expectativas.</li>
+                                            <li>Transparência é a base dos nossos relacionamentos. Acreditamos que confiança e respeito são essenciais para construir parcerias duradouras.</li>
+                                            <li>Inovação nos mantém atualizados. Estamos em constante evolução para aplicar as melhores práticas e tecnologias do setor elétrico.</li>
+                                        </ul>
+                                    </div>
+                                ) 
+                                : 
+                                (
+                                    <ul>
+                                        <li>Segurança: Prioridade máxima em todas as etapas dos serviços.</li>
+                                        <li>Qualidade: Entrega de alto padrão, com foco nos detalhes e no resultado final.</li>
+                                        <li>Eficiência: Soluções ágeis, organizadas e assertivas.</li>
+                                        <li>Comprometimento: Cumprimos prazos, normas e expectativas.</li>
+                                        <li>Transparência: Relacionamentos baseados na confiança e no respeito.</li>
+                                        <li>Inovação: Atualização constante para oferecer o que há de melhor no setor.</li>
+                                    </ul>
+                                )
+                            }
 
                         <img src={Img1} alt="Img1-Instalar" />
                     </div>
@@ -65,16 +92,38 @@ const Sobre_nos = () => {
                     <h1>PROPÓSITO E VISÃO</h1>
 
                     <div>
-                        <p>
-                            O propósito da empresa visa transformar espaços com 
-                            soluções elétricas e de infraestrutura seguras, eficientes 
-                            e personalizadas, contribuindo para o desenvolvimento 
-                            sustentável de ambientes corporativos, comerciais e industriais. 
-                                <br />
-                            Já como visão buscamos ser referência nacional em serviços 
-                            de elétrica e infraestrutura, reconhecida pela qualidade, 
-                            inovação e compromisso com a excelência em cada projeto executado.
-                        </p>
+                        {isBigScreen 
+                            ? 
+                            (
+                                <p>
+                                    Na InstaLar  buscamos ser uma referência nacional em serviços de 
+                                    elétrica e infraestrutura, destacando-nos pela qualidade, inovação 
+                                    e compromisso com a excelência. Nossa visão está fundamentada no 
+                                    desejo de transformar o setor com soluções que vão além do esperado, 
+                                    entregando resultados que unem segurança, eficiência e tecnologia de ponta.
+
+                                    Acreditamos que a excelência se constrói com dedicação, melhoria contínua 
+                                    e foco no cliente. Por isso, cada projeto executado é uma oportunidade de 
+                                    reafirmar nosso propósito e fortalecer nossa reputação como uma empresa confiável, 
+                                    preparada para os desafios do presente e comprometida com o futuro da energia e 
+                                    da infraestrutura no Brasil.
+                                </p>
+                            ) 
+                            : 
+                            (
+                                <p>
+                                    O propósito da empresa visa transformar espaços com 
+                                    soluções elétricas e de infraestrutura seguras, eficientes 
+                                    e personalizadas, contribuindo para o desenvolvimento 
+                                    sustentável de ambientes corporativos, comerciais e industriais. 
+                                        <br />
+                                    Já como visão buscamos ser referência nacional em serviços 
+                                    de elétrica e infraestrutura, reconhecida pela qualidade, 
+                                    inovação e compromisso com a excelência em cada projeto executado.
+                                </p>
+                            )
+                        }
+                        
 
 
                         <img src={Img2} alt="Img2-Instalar" />
