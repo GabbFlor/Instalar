@@ -49,6 +49,7 @@ const Sobre_nos_style = createGlobalStyle `
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        gap: 15px;
     }
 
     .escrita-responsiva-valores {
@@ -79,7 +80,7 @@ const Sobre_nos_style = createGlobalStyle `
         .quem-somos-section div,
         .valores-section div,
         .proposito-section div{
-            padding: 30px 50px 0 50px;
+            padding: 30px 50px 0 50px !important;
         }
 
         .quem-somos-section div img {
@@ -97,7 +98,7 @@ const Sobre_nos_style = createGlobalStyle `
             padding: 30px 25px 0 25px;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
+            gap: 30px !important;
             width: 100%;
         }
 
@@ -122,6 +123,7 @@ const Sobre_nos_style = createGlobalStyle `
         .valores-section img,
         .proposito-section img {
             width: 40vw;
+            height: 55vw;
             border-radius: 15px;
         }
 
