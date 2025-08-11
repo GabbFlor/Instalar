@@ -62,6 +62,7 @@ const Sobre_nos_style = createGlobalStyle `
         padding: 5px;
         width: 30vw;
         margin-top: -75px;
+        border-radius: 15px;
     }
 
     .valores-section img,

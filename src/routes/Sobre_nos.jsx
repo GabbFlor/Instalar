@@ -92,37 +92,18 @@ const Sobre_nos = () => {
                     <h1>PROPÓSITO E VISÃO</h1>
 
                     <div>
-                        {isBigScreen 
-                            ? 
-                            (
-                                <p>
-                                    Na InstaLar  buscamos ser uma referência nacional em serviços de 
-                                    elétrica e infraestrutura, destacando-nos pela qualidade, inovação 
-                                    e compromisso com a excelência. Nossa visão está fundamentada no 
-                                    desejo de transformar o setor com soluções que vão além do esperado, 
-                                    entregando resultados que unem segurança, eficiência e tecnologia de ponta.
-
-                                    Acreditamos que a excelência se constrói com dedicação, melhoria contínua 
-                                    e foco no cliente. Por isso, cada projeto executado é uma oportunidade de 
-                                    reafirmar nosso propósito e fortalecer nossa reputação como uma empresa confiável, 
-                                    preparada para os desafios do presente e comprometida com o futuro da energia e 
-                                    da infraestrutura no Brasil.
-                                </p>
-                            ) 
-                            : 
-                            (
-                                <p>
-                                    O propósito da empresa visa transformar espaços com 
-                                    soluções elétricas e de infraestrutura seguras, eficientes 
-                                    e personalizadas, contribuindo para o desenvolvimento 
-                                    sustentável de ambientes corporativos, comerciais e industriais. 
-                                        <br />
-                                    Já como visão buscamos ser referência nacional em serviços 
-                                    de elétrica e infraestrutura, reconhecida pela qualidade, 
-                                    inovação e compromisso com a excelência em cada projeto executado.
-                                </p>
-                            )
-                        }
+                        <p>
+                            O propósito da empresa é transformar espaços por meio de soluções 
+                            elétricas e de infraestrutura seguras, eficientes e personalizadas, 
+                            convertendo ambientes ultrapassados em projetos de Retrofit. Esse 
+                            processo envolve modernização e atualização, contribuindo para o 
+                            desenvolvimento sustentável de ambientes corporativos, comerciais e 
+                            industriais.
+                                <br />
+                            Já como visão buscamos ser referência nacional em serviços 
+                            de elétrica e infraestrutura, reconhecida pela qualidade, 
+                            inovação e compromisso com a excelência em cada projeto executado.
+                        </p>
                         
 
 

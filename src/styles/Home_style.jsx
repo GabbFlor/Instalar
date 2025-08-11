@@ -90,28 +90,55 @@ const Home_style = createGlobalStyle `
     }
 
     .grid-oferecimento {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 25px;
+        display:  flex;
+        flex-direction: column;
         justify-content: center;
+        gap: 20px;
     }
 
     .card {
-        background-color: #D7D7D738;
-        border: 3px solid rgba(0, 0, 0, 0.123);
-        font-size: var(--font-size-p);
-        display: flex;
-        flex-direction: column;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        width: var(--width-card);
-        height: var(--height-card);
-        border-radius: 10px;
-        gap: 10px;
+        gap: 20px;
+        cursor: pointer;
     }
 
-    .card h2 {
-        color: #F80202;
+    .card img {
+        height: 11.5vw;
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .card div {
+        background-color: #D7D7D738;
+        width: 30vw;
+        height: 11.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        transition: background 0.3s ease;
+    }
+
+    .card div:hover {
+        background-color: #ffffff4f;
+    }
+
+    .card div h2 {
+        font-size: var(--font-size-h2-card);
+        position: relative;
+    }
+
+    .card div h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: red;
+        z-index: 2;
     }
 
     .galeria-servicos-section {
@@ -175,14 +202,26 @@ const Home_style = createGlobalStyle `
     }
 
     @media (min-width: 500px) and (max-width: 800px) {
-        .grid-oferecimento {
-            grid-template-columns: repeat(2, 1fr);
+        .card img {
+            height: 15vw;
+            width: 40vw;
+        }
+
+        .card div {
+            width: 40vw;
+            height: 15vw;
         }
     }
 
     @media (max-width: 499px) {
-        .grid-oferecimento {
-            grid-template-columns: repeat(1, 1fr);
+        .card img {
+            height: 20vw;
+            width: 40vw;
+        }
+
+        .card div {
+            width: 40vw;
+            height: 20vw;
         }
 
         .sobre-nos-section {

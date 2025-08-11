@@ -15,8 +15,10 @@ const Footer = () => {
                     </h1>
 
                     <p>
-                        Rua das bolinhas, 00 Aracruz - SP <br />
-                        CEP: 00000-000 <br />
+                        Rua Carlos Gonçalves 492 <br />
+                        Bairro jardim monções <br />
+                        Santo André -SP<br />
+                        CEP: 09180-290 <br />
                         +55 (11) 99999-9999
                     </p>
                 </div>
@@ -26,7 +28,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright">
-                <p>&copy; Copyright 2025 - Instalar</p>
+                <p>&copy; Copyright 2025 - Instalar    |    CNPJ - 31.243.754/0001-04</p>
             </div>
         </>
     )

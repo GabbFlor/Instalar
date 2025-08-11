@@ -21,6 +21,7 @@ const Geral = createGlobalStyle `
 
         --width-card: 12.5vw;
         --height-card: 18.5vw;
+        --font-size-h2-card: 1.75vw;
 
         --width-img: 20vw;
         --height-img: 20vw;
@@ -55,6 +56,7 @@ const Geral = createGlobalStyle `
 
             --width-card: 22vw;
             --height-card: 30.5vw;
+            --font-size-h2-card: 2.5vw;
 
             --width-img: 25.75vw;
             --height-img: 25.75vw;
@@ -86,6 +88,7 @@ const Geral = createGlobalStyle `
 
             --width-card: 44vw;
             --height-card: 52.5vw;
+            --font-size-h2-card: 3.75vw;
 
             --width-img: 40vw;
             --height-img: 40vw;

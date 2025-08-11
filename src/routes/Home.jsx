@@ -7,6 +7,9 @@ import Img3 from "../assets/Home/grid3.webp";
 import Img4 from "../assets/Home/grid4.webp";
 import Img5 from "../assets/Home/grid5.webp";
 import Img6 from "../assets/Home/grid6.webp";
+import Img7 from "../assets/Home/grid7.webp";
+import Img8 from "../assets/Home/grid8.webp";
+import Img9 from "../assets/Home/grid9.webp";
 import Video from "../assets/Home/video.mp4";
 
 import { Link } from "react-router-dom";
@@ -59,39 +62,33 @@ const Home = () => {
 
                     <div className="grid-oferecimento">
                         <Card 
-                            titulo={"Elétrica corporativa"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
+                            img={Img3} 
+                            conteudo={"Instalações Elétricas"} 
+                            invertido={false}
                         />
+                        
                         <Card 
-                            titulo={"Elétrica comercial"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
-                        />
-                        <Card 
-                            titulo={"Infraestrutura"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
-                        />
-                        <Card 
-                            titulo={"Demolição"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
+                            img={Img8} 
+                            conteudo={"Infraestrutura"} 
+                            invertido={true}
                         />
 
-                        {/*  */}
+                        <Card 
+                            img={Img5} 
+                            conteudo={"Adequação"} 
+                            invertido={false}
+                        />
 
                         <Card 
-                            titulo={"Adequação"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
+                            img={Img7} 
+                            conteudo={"Demolição"} 
+                            invertido={true}
                         />
+
                         <Card 
-                            titulo={"Mobilização de mobiliarios"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
-                        />
-                        <Card 
-                            titulo={"Redes elétricas"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
-                        />
-                        <Card 
-                            titulo={"Redes industriais"} 
-                            conteudo={"Instalações para comércios e escritórios, com foco em estabilidade, segurança e personalização."} 
+                            img={Img9} 
+                            conteudo={"Redes"} 
+                            invertido={false}
                         />
                     </div>
                 </section>
