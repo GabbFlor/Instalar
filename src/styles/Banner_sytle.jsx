@@ -43,7 +43,7 @@ const Banner_style = createGlobalStyle `
             text-align: center;
         }
     
-        .banner-section button {
+        .banner-section a {
             width: fit-content;
             height: fit-content;
             padding: 7px 15px 5px 15px;
@@ -58,7 +58,7 @@ const Banner_style = createGlobalStyle `
             text-decoration: none;
         }
     
-        .banner-section button:hover {
+        .banner-section a:hover {
             background-color: #b10000;
         }
 

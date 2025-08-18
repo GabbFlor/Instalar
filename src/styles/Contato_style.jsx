@@ -42,7 +42,7 @@ const Contato_style = createGlobalStyle `
         text-align: center;
     }
 
-    .escrita-1 button {
+    .escrita-1 a {
         font-size: var(--font-size-p);
         color: white;
         border: none;
@@ -52,13 +52,14 @@ const Contato_style = createGlobalStyle `
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.2s ease;
+        text-decoration: none;
     }
 
-    .escrita-1 button:hover {
+    .escrita-1 a:hover {
         background-color: #b10000;
     }
 
-    .escrita-1 button svg {
+    .escrita-1 a svg {
         margin-left: 5px;
     }
 

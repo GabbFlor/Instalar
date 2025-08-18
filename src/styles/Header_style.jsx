@@ -33,7 +33,7 @@ const Header_style = createGlobalStyle `
         background-color: #7777775e;
     }
 
-    header button {
+    .link-whatsapp {
         width: fit-content;
         height: fit-content;
         padding: 7px 15px 5px 15px;
@@ -45,9 +45,10 @@ const Header_style = createGlobalStyle `
         color: white;
         transition: background-color 0.2s ease;
         font-size: var(--font-size-header-a);
+        text-decoration: none;
     }
 
-    header button:hover {
+    .link-whatsapp:hover {
         background-color: #b10000;
     }
 

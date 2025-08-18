@@ -31,7 +31,7 @@ const Home = () => {
                         <p>Soluções elétricas e infraestrutura com segurança e qualidade</p>
                     </div>
 
-                    <button>SAIBA MAIS</button>
+                    <Link to={'/servicos'}>SAIBA MAIS</Link>
                 </Banner>
 
                 <section className="sobre-nos-section">

@@ -18,7 +18,7 @@ const Header = () => {
                 </ul>
             </nav>
 
-            <button type='button'>FALE CONOSCO</button>
+            <a href='https://wa.me/5511966576315' target='blank_' className='link-whatsapp'>FALE CONOSCO</a>
         </header>
     )
 }
