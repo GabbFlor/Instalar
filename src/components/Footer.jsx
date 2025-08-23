@@ -19,7 +19,8 @@ const Footer = () => {
                         Bairro jardim monções <br />
                         Santo André -SP<br />
                         CEP: 09180-290 <br />
-                        +55 (11) 99999-9999
+                        +55 (11) 96657-6315 <br />
+                        obras.instalar@gmail.com
                     </p>
                 </div>
 
